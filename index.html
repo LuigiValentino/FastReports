@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastReports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./sources/icono.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="./sources/logo_sinfondo.png" height="250" class="logo">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-panel">
+            <h3>Detalles del reporte</h3>
+            <form id="reportForm">
+                <div class="mb-3">
+                    <label for="projectTitle" class="form-label">Título del Proyecto</label>
+                    <input type="text" class="form-control" id="projectTitle" placeholder="Ingrese el título del proyecto">
+                </div>
+                <div class="mb-3">
+                    <label for="authorName" class="form-label">Autor</label>
+                    <input type="text" class="form-control" id="authorName" placeholder="Nombre del Autor">
+                </div>
+                <div class="mb-3">
+                    <label for="supervisorName" class="form-label">Supervisor</label>
+                    <input type="text" class="form-control" id="supervisorName" placeholder="Nombre del Supervisor">
+                </div>
+                <div class="mb-3">
+                    <label for="department" class="form-label">Departamento</label>
+                    <input type="text" class="form-control" id="department" placeholder="Nombre del Departamento">
+                </div>
+                <div class="mb-3">
+                    <label for="deliveryDate" class="form-label">Fecha de Entrega</label>
+                    <input type="date" class="form-control" id="deliveryDate">
+                </div>
+
+                <div class="section-title">Resumen Ejecutivo</div>
+                <div class="mb-3">
+                    <label for="executiveSummary" class="form-label">Resumen Ejecutivo</label>
+                    <textarea class="form-control" id="executiveSummary" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Índice</div>
+                <div class="mb-3">
+                    <label for="indexContent" class="form-label">Índice</label>
+                    <textarea class="form-control" id="indexContent" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Introducción</div>
+                <div class="mb-3">
+                    <label for="introductionContent" class="form-label">Introducción</label>
+                    <textarea class="form-control" id="introductionContent" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Objetivos del Proyecto</div>
+                <div class="mb-3">
+                    <label for="generalObjective" class="form-label">Objetivo General</label>
+                    <textarea class="form-control" id="generalObjective" rows="2"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="specificObjectives" class="form-label">Objetivos Específicos</label>
+                    <textarea class="form-control" id="specificObjectives" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Descripción del Problema</div>
+                <div class="mb-3">
+                    <label for="problemDescription" class="form-label">Descripción del Problema</label>
+                    <textarea class="form-control" id="problemDescription" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Revisión de la Literatura</div>
+                <div class="mb-3">
+                    <label for="literatureReview" class="form-label">Revisión de la Literatura</label>
+                    <textarea class="form-control" id="literatureReview" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Alcance del Proyecto</div>
+                <div class="mb-3">
+                    <label for="projectScope" class="form-label">Alcance del Proyecto</label>
+                    <textarea class="form-control" id="projectScope" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Metodología</div>
+                <div class="mb-3">
+                    <label for="developmentApproach" class="form-label">Enfoque de Desarrollo</label>
+                    <textarea class="form-control" id="developmentApproach" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="projectPlanning" class="form-label">Planificación y Cronograma</label>
+                    <textarea class="form-control" id="projectPlanning" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="systemDesign" class="form-label">Diseño del Sistema</label>
+                    <textarea class="form-control" id="systemDesign" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="testingValidation" class="form-label">Pruebas y Validación</label>
+                    <textarea class="form-control" id="testingValidation" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Tecnologías Utilizadas</div>
+                <div class="mb-3">
+                    <label for="programmingLanguages" class="form-label">Lenguajes de Programación</label>
+                    <textarea class="form-control" id="programmingLanguages" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="frameworksLibraries" class="form-label">Frameworks y Bibliotecas</label>
+                    <textarea class="form-control" id="frameworksLibraries" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="developmentTools" class="form-label">Herramientas de Desarrollo</label>
+                    <textarea class="form-control" id="developmentTools" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="deploymentPlatforms" class="form-label">Plataformas de Implementación</label>
+                    <textarea class="form-control" id="deploymentPlatforms" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Desarrollo</div>
+                <div class="mb-3">
+                    <label for="codeStructure" class="form-label">Estructura del Código</label>
+                    <textarea class="form-control" id="codeStructure" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="moduleDescription" class="form-label">Descripción de Módulos o Componentes</label>
+                    <textarea class="form-control" id="moduleDescription" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="implementedAlgorithms" class="form-label">Algoritmos Implementados</label>
+                    <textarea class="form-control" id="implementedAlgorithms" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="challengesSolutions" class="form-label">Desafíos y Soluciones</label>
+                    <textarea class="form-control" id="challengesSolutions" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="codeDocumentation" class="form-label">Documentación del Código</label>
+                    <textarea class="form-control" id="codeDocumentation" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Pruebas y Resultados</div>
+                <div class="mb-3">
+                    <label for="unitTesting" class="form-label">Pruebas Unitarias</label>
+                    <textarea class="form-control" id="unitTesting" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="integrationTesting" class="form-label">Pruebas de Integración</label>
+                    <textarea class="form-control" id="integrationTesting" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="userTesting" class="form-label">Pruebas de Usuario</label>
+                    <textarea class="form-control" id="userTesting" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="performanceOptimization" class="form-label">Desempeño y Optimización</label>
+                    <textarea class="form-control" id="performanceOptimization" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Resultados</div>
+                <div class="mb-3">
+                    <label for="technicalResults" class="form-label">Resultados Técnicos</label>
+                    <textarea class="form-control" id="technicalResults" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="functionalResults" class="form-label">Resultados Funcionales</label>
+                    <textarea class="form-control" id="functionalResults" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="projectImpact" class="form-label">Impacto del Proyecto</label>
+                    <textarea class="form-control" id="projectImpact" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Análisis y Discusión</div>
+                <div class="mb-3">
+                    <label for="stateOfArtComparison" class="form-label">Comparación con el Estado del Arte</label>
+                    <textarea class="form-control" id="stateOfArtComparison" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="projectLimitations" class="form-label">Limitaciones del Proyecto</label>
+                    <textarea class="form-control" id="projectLimitations" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="lessonsLearned" class="form-label">Lecciones Aprendidas</label>
+                    <textarea class="form-control" id="lessonsLearned" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Conclusiones</div>
+                <div class="mb-3">
+                    <label for="conclusionsSummary" class="form-label">Resumen de Conclusiones</label>
+                    <textarea class="form-control" id="conclusionsSummary" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="recommendations" class="form-label">Recomendaciones</label>
+                    <textarea class="form-control" id="recommendations" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Trabajo Futuro</div>
+                <div class="mb-3">
+                    <label for="futureWork" class="form-label">Propuestas para el Futuro</label>
+                    <textarea class="form-control" id="futureWork" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Referencias</div>
+                <div class="mb-3">
+                    <label for="references" class="form-label">Referencias</label>
+                    <textarea class="form-control" id="references" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Anexos</div>
+                <div class="mb-3">
+                    <label for="additionalDocumentation" class="form-label">Documentación Adicional</label>
+                    <textarea class="form-control" id="additionalDocumentation" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="sourceCode" class="form-label">Código Fuente</label>
+                    <textarea class="form-control" id="sourceCode" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="tablesAndCharts" class="form-label">Tablas y Gráficos</label>
+                    <textarea class="form-control" id="tablesAndCharts" rows="3"></textarea>
+                </div>
+
+                <div class="section-title">Personalización de Estilos</div>
+                <div class="mb-3">
+                    <label for="fontSelect" class="form-label">Seleccionar Fuente</label>
+                    <select id="fontSelect" class="form-select">
+                        <option value="Roboto">Roboto</option>
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Georgia">Georgia</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="colorSelect" class="form-label">Seleccionar Color Principal</label>
+                    <input type="color" id="colorSelect" class="form-control">
+                </div>
+
+                <button type="button" class="btn btn-primary btn-custom" id="generatePDF">Generar PDF <i class="fas fa-file"></i></button>
+            </form>
+        </div>
+        <div class="right-panel smooth-scroll">
+            <h3>Vista Previa</h3>
+            <div id="reportPreview"></div>
+        </div>
+    </div>
+    <footer>
+        <p>- &copy;2024 FastReports. - <a href="https://github.com/LuigiValentino/FastReports">Visita el repo oficial.</a> -</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
